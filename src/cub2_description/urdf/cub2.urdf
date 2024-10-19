@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="cub2">
+  <link name="base_footprint"/>
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="file://$(find cub2_description)/meshes/Cub2URDF241001.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file://$(find cub2_description)/meshes/Cub2URDF241001.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+</robot>

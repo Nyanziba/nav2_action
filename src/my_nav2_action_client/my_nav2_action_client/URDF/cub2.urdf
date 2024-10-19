@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="cub2">
+
+    <link name="base_footprint"/>
+    <joint name="base_link_joint" type="fixed">
+    <origin xyz="0 0 0.5"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    </joint>
+
+    <link name="base_link">
+    <visual>
+        <geometry>
+        <mesh filename="file://$(find my_nav2_action_client)/meshes/Cub2URDF241001.dae"/>
+        </geometry>
+    </visual>
+    </link>
+
+</robot>
